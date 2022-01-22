@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% load bootstrap %}
+
+{% block main %}
+
+<div class="container mt-4">
+    <form action="" method="POST">
+        {% csrf_token %}
+            {{form | bootstrap_horizontal}}
+        <button type="submit" class="btn btn-danger">Edit</button>
+    </form>
+</div>
+
+{% endblock %}

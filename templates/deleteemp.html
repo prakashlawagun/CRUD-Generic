@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+
+{% block main %}
+
+<div class="container mt-4">
+    <form action="" method="POST">
+        {% csrf_token %}
+    <div class="alert alert-danger" role="alert">
+  Are you sure you want to delete ?
+</div>
+        <a href="/" class="btn btn-info">Cancel</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+</div>
+
+{% endblock %}

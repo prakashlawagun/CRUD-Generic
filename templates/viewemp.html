@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block main%}
+
+<div class="container mt-4">
+    <div style="border:2px solid black; font-size:25px;">
+    <h2>Name:{{emp_obj.ename}}</h2><br>
+    <p>Email:{{emp_obj.email}}</p>
+    <p>Address:{{emp_obj.address}}</p>
+    <p>Salary:{{emp_obj.salary}}</p>
+    </div>
+</div>
+
+{% endblock %}
